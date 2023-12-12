@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Ritalin";
+    src: url(ofont.ru_Ritalin.ttf);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: rgb(230, 214, 32);
+    font-family: "Roboto", "Ritalin", sans-serif;
+    background-image:  url(../style/img/bg_3.jpg);
+    background-size: cover; /* Растягиваем картинку на весь экран, сохраняя пропорции и обрезая лишнее */
+    background-attachment: fixed; /* Фиксируем фоновое изображение, если вы хотите, чтобы оно оставалось на месте при прокрутке */
+    background-position: center; /* Центрируем фоновое изображение */
+    font-size: 22px;
+}
+
+button {
+    position: absolute;
+    background-color: #000000;
+    border: 2px solid;
+    border-radius: 21px;
+    color: white;
+    padding: 25px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 25px 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a{
+    color: #ffee00;
+}
+
+.button:focus-visible {
+	border: 1px solid rgb(236, 7, 7);
+	outline: none;
+    text-decoration: none;
+}
+
+.button:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgba(255, 255, 255, 0.1), 0 3px 6px rgb(0 0 0 / 8%);
+    text-decoration: none;
+}
+.button:active {
+	background-color: #ff0000;
+    text-decoration: none;
+}
+.button:disabled {
+	background-color: #eee;
+	border-color: #eee;
+	color: #ff0000;
+	cursor: not-allowed;
+    text-decoration: none;
+}
+button:visited{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    text-align: center;
+    padding-bottom: 10px ;
+}
+
+h3{
+    font-size: 25px;
+    
+}
+
+.collage {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+}
+
+.collage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.footer{
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    height: 100px;    
+    width: 100%;
+    margin-top: 512px;
+}
+
+@media (max-width: 900px){
+    button{
+        /* padding: 0 0 0 0; */
+        text-align: center;
+        font-size: 14px;
+        border: 2px solid;
+        border-radius: 18px;
+        height: 20px;
+        padding-top: 15px;
+    }
+}

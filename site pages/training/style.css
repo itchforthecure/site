@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Ritalin";
+    src: url(ofont.ru_Ritalin.ttf);
+}
+body {
+    font-size: 21px;
+    font-family: "Roboto", "Ritalin", sans-serif;
+  }
+h1,h3{
+    text-align: center;
+    line-height: 70px;
+}
+.fg{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+}
+.ph img{
+    
+    text-align: left;
+    width: 600px;
+    border: 8px solid white;
+    
+}
+
+.textcols {
+    text-align: left;    
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 58%;   
+}
+.textcols-item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 100%;
+    width: 80%;
+	background: #ffffff;
+    margin-left: 200px;
+    margin-right: 100px;
+    
+}
+
+.btn{
+    padding-top: 34px;
+}
+button {    
+    background-color: #000000; /* Зеленый цвет */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 25px 25px;
+    cursor: pointer;
+    border-radius: 21px;
+}
+
+.button:focus-visible {
+	border: 1px solid rgb(236, 7, 7);
+	outline: none;
+}
+
+.button:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.button:active {
+	background-color: #808080;
+}
+.button:disabled {
+	background-color: #eee;
+	border-color: #eee;
+	color: #444;
+	cursor: not-allowed;
+}
+a{
+    color: #690808;
+}
+.footer{
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    height: 100px;    
+    width: 100%;
+    
+}
